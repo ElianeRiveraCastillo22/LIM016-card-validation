@@ -1,12 +1,82 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <!--<style> 
+        body{ blackgroud-image: url("https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/Purina%C2%AE%20La%20llegada%20del%20gatito%20a%20casa.jpg?itok=_3VnSPSl" )}
+    </style>-->
+    <meta charset="UTF-8">
+    <title>validacion de tarjeta </title>
+    <link href="style.css" rel="stylesheet" type="text/css"> 
   </head>
-  <body>
-    <header> </header>
+  <body >
+    <div>
+      <header> </header>
+
+      <form action="" id="formularioTarjeta" class="formularioTarjeta"> 
+           <div class="grupo">
+               <label for="input-Numero">Nùmero de tarjeta</label><br>
+               <input type="text" id="input-Numero" maxlength="19" autocomplete="off" >
+               <div id="vacio"></div>
+           </div>
+           <div clas="grupo">
+                <label for="input-Nombre">Nombre</label><br>
+                 <input type="text" id="input-Nombre" autocomplete="off" required>
+           </div>
+           <div class="flexbox">
+               <div class="grupoExpira">
+                   <label for="fecha">Expiracion</label>
+                   <div class="flexbox">
+                       <div class="grupoSelect">
+                           <select name="mes" id="selectMes">
+                            <option>Mes</option>
+                           </select>
+                           <i class="fas fa-angle-down"></i>
+                       </div>
+                       <div class="grupoSelect">
+                           <select name="year" id="selectAño">
+                            <option>Año</option>
+                            <i class="fas fa-angle-down"></i>
+                           </select>
+                       </div>
+                   </div>
+               </div>
+               <div class="grupoCvv">
+                   <label for="inputCvv">CVV</label>
+                   <input type="text" id="InputCvv" maxlength="3" required>
+               </div>
+           </div>
+                    <button type="submit" id="button-continuar">Continuar</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="contenedor">
+        <section class="tarjeta" id="tarjeta">
+           <div>
+            <img src="/chip-tarjeta.png" alt="chip">
+           </div>
+           <div class="datos">
+               <div class="grupo" id="numero">
+               <p class="label">numero de tarjeta</p>
+               <p class="aparece-numero" id="aparece-numero">#### #### #### #### </p>
+               </div>
+               <div class="flexbox">
+                   <div class="grupo" id="nombre">
+                    <p class="label">nombre</p>
+                    <p class="aparece-nombre" id="aparece-nombre">Eliane Rivera Castillo</p>
+                    </div>
+                    <div class="grupo" id="experación">
+                    <p class="label" >Expiración</p>
+                    <p class="nombre"><span>MM</span>/AA</p>
+                    </div>
+                </div>
+           </div>
+
+        </section>
+    </div>
+
     <main></main>
     <footer></footer>
     <script src="index.js" type="module"></script>
