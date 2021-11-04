@@ -12,9 +12,12 @@ let botonValidar= document.getElementById("button-continuar");
 
 botonValidar.addEventListener('click', ()=>{
     let valorDelNumero = inputNumero.value;// elimine .replace
+//para que me lleve a otro sitio
+
+
 //para que aparezca el numero en la tarjeta 
     let apareceNumero=document.getElementById("aparece-numero");
-    apareceNumero.innerText=validator.maskify(valorDelNumero)
+    apareceNumero.innerText=validator.maskify(valorDelNumero);
  let isValidC=validator.isValid(valorDelNumero)
  let maskifyC= validator.maskify(valorDelNumero)
  

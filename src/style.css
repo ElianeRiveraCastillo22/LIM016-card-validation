@@ -1,1 +1,77 @@
 title { color:blue}
+en general
+*{
+    margin:0 auto;
+    height: 0 auto;
+    box-sizing: border-box;
+}
+
+.cajaFrase{
+    background:rgb(0, 122, 82) ;
+    padding: 55px;
+}
+
+.cajaBienvenido{
+    background:rgb(82, 8, 167) ;
+    padding: 300px;
+    font-size:40px;
+    color:red ;
+}
+
+
+/*formulario de tarjeta*/
+
+body{
+    background-color:#fafafa;
+}
+form{
+    box-shadow: 0 0 6px;
+    width:0 auto;
+    margin: 570px ;
+    margin-top:20px ;
+    margin-bottom:20px;
+    width:300px;
+    padding:1 em;
+    border:1px solid #ccc;
+    border-radius: 1em ;
+    position: relative;
+    background-image:url("") ;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.flexbox{
+    display:flex;
+    justify-content:space-between ;
+    margin-bottom: 20px;
+}
+
+.flexbox1{
+    display:flex;
+}
+
+.tarjeta{
+    width:0 auto;/*ancho*/
+    max-width:550px;/*para que mi tarjeta no sea muy grande*/
+    position: relative;
+    color:white;/*color de texto blanco*/
+    background-image:url("https://thumbs.dreamstime.com/b/textura-de-fondo-esmeralda-color-agua-marino-abstracto-verde-acuarela-mano-194294354.jpg") ;
+    border-radius: 2em;
+    margin: 450px;
+    margin-top: 30px;
+    margin-bottom:20px;
+    justify-content:center;
+   
+    
+}  
+
+.flexbox2{
+    display: flex;
+}
+.formu{
+    text-align: center;
+    font-weight: 700;
+    
+
+}

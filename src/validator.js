@@ -11,7 +11,7 @@ const validator = {
      //*ubicar las posiones pares para multiplicarlo 
     for(let i = 0; i < valorInvertido.length; i++){ 
       
-          if(i % 2 != 0){//busca las posiones inpares por que esas con las pares 
+          if(i % 2 != 0){//busca las posiones pares pero esta en las i
                 if ( (valorInvertido[i]*2) >=10){
                   valorInvertido[i]=valorInvertido[i]*2-9;
                 } 
