@@ -1,77 +1,137 @@
-title { color:blue}
-en general
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 *{
+    
     margin:0 auto;
     height: 0 auto;
     box-sizing: border-box;
-}
-
-.cajaFrase{
-    background:rgb(0, 122, 82) ;
-    padding: 55px;
-}
-
-.cajaBienvenido{
-    background:rgb(82, 8, 167) ;
-    padding: 300px;
-    font-size:40px;
-    color:red ;
-}
-
-
-/*formulario de tarjeta*/
-
-body{
-    background-color:#fafafa;
-}
-form{
-    box-shadow: 0 0 6px;
-    width:0 auto;
-    margin: 570px ;
-    margin-top:20px ;
-    margin-bottom:20px;
-    width:300px;
-    padding:1 em;
-    border:1px solid #ccc;
-    border-radius: 1em ;
-    position: relative;
-    background-image:url("") ;
-    justify-content: center;
-    margin-bottom: 20px;
+ } 
+ body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(145, 142, 136);
+    background-color: rgba(255, 255, 255, 0.973);
+    background-size: 0 0, 10px 10px;
     
+    min-height: 100vh;
 }
+/*formulario de la tarjeta*/
 
-.flexbox{
-    display:flex;
-    justify-content:space-between ;
-    margin-bottom: 20px;
-}
-
-.flexbox1{
-    display:flex;
-}
-
-.tarjeta{
-    width:0 auto;/*ancho*/
-    max-width:550px;/*para que mi tarjeta no sea muy grande*/
-    position: relative;
-    color:white;/*color de texto blanco*/
-    background-image:url("https://thumbs.dreamstime.com/b/textura-de-fondo-esmeralda-color-agua-marino-abstracto-verde-acuarela-mano-194294354.jpg") ;
-    border-radius: 2em;
-    margin: 450px;
-    margin-top: 30px;
-    margin-bottom:20px;
-    justify-content:center;
-   
-    
-}  
-
-.flexbox2{
-    display: flex;
-}
-.formu{
+.formulario-Tarjeta{
+    background:solid rgb(255, 255, 255);
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    box-shadow:0 5px 10px -5px black ;/*espaciado entrecada elelento*/
     text-align: center;
-    font-weight: 700;
-    
+    margin-top: 3em;
+    display: 2.5em;
+    gap:2.5em;/*separa las cajitas*/
+} 
+.formulario-Tarjeta__grupo{
+    position: relative;
+     --color: #575757;
+ }   
+.form__input{
+     width: 100%;
+    background: none;
+    color:#706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+.form__imput:focus + form__label{
+    color:rgba(0, 0, 0, 0.959)
 
+}
+.form__label{
+    color: var(--color);
+    cursor: pointer;/*para cuando pasen el mause*/
+    position: absolute;
+    top:0;
+    left: 5px;
+    transition: transform .5s color .3s;
+    transform: translateY(10px);
+} 
+.button-continuar{
+    background: #37c4ceec;
+    color: white;
+    font-family:'Roboto', sans-serif ;
+    padding: .8em 0;
+    border-radius: .5em ;
+}
+.form__line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #37c4ceec;
+}
+.formulario-Tarjeta__cabeza{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-Ema__Fecha{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.grupoSelect{
+    display: inline-block;
+}
+.formulario-Tarjeta__flex-Ema--Expiración{
+    display: inline-block;
+    width: 100%;
+   
+}
+/* tarjeta*/
+
+.contenedor2{
+    width: 90%;
+    max-width: 1000px;/*limitacion del ancho*/
+    padding: 40px 20px;
+    margin: auto;
+     background:url(https://i.pinimg.com/564x/e4/20/1f/e4201fc53efaa0f32167b16b0c2fcd98.jpg); 
+    border-radius: 15px;
+    justify-content: center;
+}
+.contenedor> div{
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 315px;
+    display: flex;
+    flex-direction:column;
+    box-sizing:0 10px 10px 0 rgba(90, 148, 90, 0.3);
+
+}
+
+
+ .tarjeta.tarjeta__img{
+    width:100% ;
+    margin-bottom:20px ;
+}
+.tarjeta .label{
+    font-size: 15px;
+    color:var(--color);
+    margin-bottom: 5px;
+}
+.tarjeta .grupo .aparece-numero,
+.tarjeta .grupo .aparece-nombre,
+.tarjeta .grupo .aparece-expiracion{
+    color:#fff ;
+    font-size: 22px;
+    text-transform: uppercase;
+
+}
+.tarjeta .flexbox-NomExp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
