@@ -1,8 +1,16 @@
 coverage/
 node_modules/
+test/
 .DS_Store
 *.log
-holaaa
+holaa
+.package-lock.json
+.package.json
+.FAQ.md
+.README.md
+.babelrc
+.eslintrc
+.editorconfig 
 # Editor directories and files
 .idea
 .vscode
