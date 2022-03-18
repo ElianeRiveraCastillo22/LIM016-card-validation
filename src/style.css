@@ -4,14 +4,37 @@
     margin:0 auto;
     height: 0 auto;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
  } 
  body{
-    font-family: 'Roboto', sans-serif;
+   
     background-color: rgb(145, 142, 136);
     background-color: rgba(255, 255, 255, 0.973);
     background-size: 0 0, 10px 10px;
-    
     min-height: 100vh;
+}
+p.cajaBienvenido {
+    font-size: 50px;
+}
+
+#btnWelcome {
+    height: 50px;
+    font-size: 20px;
+    width: 220px;
+    margin: 40px 0px;
+    border-radius: 10px;
+    border: solid 0px;
+    cursor: pointer;
+}
+#welcome{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #ffffff, #e8f0ff, #c1e6ff, #8bdff9, #4bd7e1, #34cecf, #1cc5bd, #00bba9, #00b0a8, #00a5a5, #0099a1, #008e9b);
 }
 /*formulario de la tarjeta*/
 
@@ -22,8 +45,9 @@
     padding: 4.5em 3em;
     box-shadow:0 5px 10px -5px black ;/*espaciado entrecada elelento*/
     text-align: center;
-    margin-top: 3em;
+    margin-top: 7%;
     display: 2.5em;
+    background: white;
     gap:2.5em;/*separa las cajitas*/
 } 
 .formulario-Tarjeta__grupo{
@@ -57,9 +81,19 @@
 .button-continuar{
     background: #37c4ceec;
     color: white;
-    font-family:'Roboto', sans-serif ;
-    padding: .8em 0;
-    border-radius: .5em ;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.8em 0;
+    border-radius: 0.5em;
+    margin-top: 15px;
+    height: 40px;
+    width: 100px;
+    font-size: solid 0px;
+    border: solid 0px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .form__line{
     position: absolute;
@@ -91,16 +125,38 @@
     width: 100%;
    
 }
+#boxForm{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    overflow-y:hidden;
+    background-image: linear-gradient(to top, #ffffff, #e8f0ff, #c1e6ff, #8bdff9, #4bd7e1, #34cecf, #1cc5bd, #00bba9, #00b0a8, #00a5a5, #0099a1, #008e9b);
+}
+#btnRegreso {
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 8%;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: solid 0.5px;
+}
 /* tarjeta*/
 
 .contenedor2{
-    width: 90%;
-    max-width: 1000px;/*limitacion del ancho*/
+    width: 70%;
+    max-width: 700px;
     padding: 40px 20px;
-    margin: auto;
-     background:url(https://i.pinimg.com/564x/e4/20/1f/e4201fc53efaa0f32167b16b0c2fcd98.jpg); 
+     background:url(https://i.pinimg.com/564x/e4/20/1f/e4201fc53efaa0f32167b16b0c2fcd98.jpg);
     border-radius: 15px;
     justify-content: center;
+    min-height: 400px;
+    padding: 5%;
+    overflow-y:hidden;
+    box-shadow: 0 5px 10px -5px black;
 }
 .contenedor> div{
     padding: 30px;
@@ -109,18 +165,25 @@
     display: flex;
     flex-direction:column;
     box-sizing:0 10px 10px 0 rgba(90, 148, 90, 0.3);
-
 }
-
-
- .tarjeta.tarjeta__img{
-    width:100% ;
-    margin-bottom:20px ;
+.tarjeta__img>img{
+    width: 15%;
+    margin-bottom: 5%;
 }
 .tarjeta .label{
-    font-size: 15px;
+    font-size: 30px;
     color:var(--color);
     margin-bottom: 5px;
+}
+/* .grupo{
+    width: 100%;
+} */
+
+.grupo{
+    margin-left: 20px;
+}
+.aparece-numero{
+    height: 25px;
 }
 .tarjeta .grupo .aparece-numero,
 .tarjeta .grupo .aparece-nombre,
@@ -134,4 +197,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+#boxTarjeta{
+    height:100vh;
+    width: 100%;
+    display: none;
+    overflow-y:hidden;
+    padding: 6%;
 }

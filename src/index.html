@@ -4,130 +4,93 @@
     <meta charset="UTF-8">
     <title>validacion de tarjeta </title>
     <link href="style.css" rel="stylesheet" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   </head>
 
-  <body >
-      <header class="ContenedorHeader">
+    <body >
 
-          <section class="caja"><!--bloque-->
-            <p>No se nota pero de apoco se ahorra</p>
-
-            <a href="#" class="boton">
-               <span class="boton__texto"> Banca por internet </span>
-               <i class="boton__icono fas fa-arrow-right"></i>
-            </a>
-
-          </section>
-
-      </header>
-
-      <main class="cajaBienvenido">Bienvenido</main>
-
-    
-
-            <form action="" id="formulario-Tarjeta" class="formulario-Tarjeta"> 
-              
+        <section class="welcome" id="welcome"><!--bloque-->
+            <p class="cajaBienvenido">Bienvenid@</p>
+            <button  id="btnWelcome">
+                ¡Valida tu tarjeta!
+            </button>
+            
+        </section>
+        <section id="boxForm">
+            <form action="" id="formulario-Tarjeta" class="formulario-Tarjeta">
                 <div class="formulario-Tarjeta__cabeza">formulario</div>
                 <hr/>
-
                 <div class="formulario-Tarjeta__grupo">
                     <label class="form__Label" for="input-Numero"></label><br/>
                     <input  placeholder="Nùmero de tarjeta" class="form__input" type="text" id="input-Numero" maxlength="19" autocomplete="off" required>
                     <span class="form__line"></span>
-                    
                 </div>
-
                 <div class="formulario-Tarjeta__grupo">
                     <label class="form__Label" for="input-Nombre"></label><br/>
                     <input placeholder="Nombre" class="form__input" type="text" id="input-Nombre" autocomplete="off" required>
                     <span class="form__line"></span>
-
                 </div>
-
                 <div class="formulario-Tarjeta__grupo">
-                   <div class="content">
-                    <div class="formulario-Tarjeta__flex-Ema--Expiración">
-                     <label class="form__Label" style="color:#706c6c;" for="fecha">Expiración</label>
-                       
-
-                        <div class="flex-Ema__Fecha">
-
-                            <div class="grupoSelect">
-                                <select class="form__input" name="mes" id="selectMes"><br>
-                                <option class="form__Label" disabled selected>Mes</option>
-                                <i class="fas fa-angle-down"></i>
-                                </select>
-                                <span class="form__line"></span>
-                               
+                    <div class="content">
+                        <div class="formulario-Tarjeta__flex-Ema--Expiración">
+                            <label class="form__Label" style="color:#706c6c;" for="fecha">Expiración</label>
+                            <div class="flex-Ema__Fecha">
+                                <div class="grupoSelect">
+                                    <select class="form__input" name="mes" id="selectMes"><br>
+                                    <option class="form__Label" disabled selected>Mes</option>
+                                    <i class="fas fa-angle-down"></i>
+                                    </select>
+                                    <span class="form__line"></span>
+                                </div>
+                                <div class="grupoSelect">
+                                    <select class="form__input" name="year" id="selectAño">
+                                    <option class="form__Label">Año</option>
+                                    <i class="fas fa-angle-down"></i>
+                                    </select>
+                                    <span class="form__line"></span>
+                                </div>
                             </div>
-
-                            <div class="grupoSelect">
-                                <select class="form__input" name="year" id="selectAño">
-                                <option class="form__Label">Año</option>
-                                <i class="fas fa-angle-down"></i>
-                                </select>
-                                <span class="form__line"></span>
-                            </div>
-
                         </div>
                     </div>
-                    </div>
-                   
-                        <div class="flex-Ema__Cvv">
+                    <div class="flex-Ema__Cvv">
                         <label class="form__Label" style="color: #706c6c;" for="inputCvv">CVV</label>
                         <input class="form__input" type="text" id="InputCvv" maxlength="3" required>
                         <span class="form__line"></span>
-                        </div>
-
+                    </div>
                 </div>
-                <br>
-                <br>
-
-            <a type="submit" class="button-continuar" id="button-continuar" >Continuar</a>
-
-            </form> 
-    <br>
-    <br>
-    <br>
-    <br>
-
+                <button type="submit" class="button-continuar" id="button-continuar" >Continuar</button>
+            </form>
+        </section>
    <!--  tarjeta -->
-
+   <section id="boxTarjeta">
     <div  class="contenedor2">
         <div class="tarjeta" id="tarjeta">
             <div>
                 <figure class="tarjeta__img">
-
                     <img  src="./img/chip-tarjeta.png" alt="chip">
-           
                 </figure>
             </div>
             <div class="tarjeta__datos">
-
                 <div class="grupo" id="numero">
-                        <p class="label">numero de tarjeta</p>
+                        <p class="label">Numero de tarjeta</p>
                         <p class="aparece-numero" id="aparece-numero">#### #### #### ####</p>
                 </div>
-
                 <div class="flexbox-NomExp">
-
                     <div class="grupo" id="nombre">
-                        <p class="label">nombre</p>
+                        <p class="label">Nombre</p>
                         <p class="aparece-nombre" id="aparece-nombre">Eliane Rivera Castillo</p>
                     </div>
-
-                    <div class="grupo" id="experación">
+                    <div class="grupo grupo1" id="experación">
                         <p class="label" >Expiración</p>
                         <p class="aparece-expiracion"><span class="aparece-expiracion">MM</span>/AA</p>
                     </div>
-
                 </div>
-            </div>    
+            </div>
+        </div>
     </div>
-</div>
+  <button id="btnRegreso">Validar otra vez</button>
+</section>
 
-    
-    
     <script src="index.js" type="module"></script>
   </body>
 </html>
