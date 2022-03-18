@@ -3,7 +3,6 @@ node_modules/
 test/
 .DS_Store
 *.log
-holaa
 .package-lock.json
 .package.json
 .FAQ.md
