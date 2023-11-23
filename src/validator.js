@@ -1,4 +1,4 @@
-const validator = {
+/* const validator = {
   //*validar algoritmo de lunh
 
   isValid:function (valorDelNumero){
@@ -48,3 +48,4 @@ return sumaDeValores%10===0
 
 export default validator;
 
+ */
